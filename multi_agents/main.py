@@ -10,8 +10,13 @@ if os.environ.get("LANGCHAIN_API_KEY"):
 load_dotenv()
 
 
+<<<<<<< HEAD
 def open_task():
     with open('task.json', 'r') as f:
+=======
+async def main():
+    with open('task.json', 'r') as f: 
+>>>>>>> 1bf148a (Testing this out)
         task = json.load(f)
 
     if not task:
@@ -30,3 +35,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+ 
